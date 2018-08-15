@@ -1,0 +1,16 @@
+{
+  "name": "angularjs-lazy-loading",
+  "version": "1.0.0",
+  "description": "AngularJS Lazy Loading example with ocLazyLoad and UI Router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.18",
+    "angular": "^1.6.10",
+    "oclazyload": "^1.1.0"
+  }
+}
