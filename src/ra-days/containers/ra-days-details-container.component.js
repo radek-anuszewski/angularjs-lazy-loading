@@ -10,7 +10,6 @@
 
         function bindUnit (unit) {
             $ctrl.unit = unit;
-            alert(JSON.stringify($ctrl.unit))
         }
     }
 
