@@ -17,6 +17,15 @@
                 datetime: ['$stateParams', function ($stateParams) {
                     return $stateParams.datetime;
                 }],
+                loadService: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load('src/ra-days/services/day-details.service.js');
+                }],
+                loadContainer: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load('src/ra-days/containers/ra-days-details-container.component.js')
+                }],
+                loadComponent: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load('src/ra-days/presentational/ra-days-details.component.js')
+                }],
             },
         };
 
