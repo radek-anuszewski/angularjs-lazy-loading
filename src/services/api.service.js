@@ -1,6 +1,6 @@
 (function () {
-    function ApiService ($http, $q) {
-        var apiKey = '';
+    function ApiService ($http, $q, CONSTANTS) {
+        var apiKey = CONSTANTS.apiKey;
         var apiUrl = 'http://api.openweathermap.org/data/2.5/';
         var cache = {};
 

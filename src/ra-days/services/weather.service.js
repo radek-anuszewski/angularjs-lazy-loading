@@ -17,8 +17,8 @@
         }
     }
 
-    function WeatherService (ApiService) {
-        var cityId = '';
+    function WeatherService (ApiService, CONSTANTS) {
+        var cityId = CONSTANTS.cityId;
         var units = 'metric';
 
         function _getOnlyDays (data) {
