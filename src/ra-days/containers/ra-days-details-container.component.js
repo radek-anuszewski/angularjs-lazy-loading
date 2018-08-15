@@ -1,9 +1,9 @@
 (function () {
-    function controller (WeatherService) {
+    function controller (DayDetailsService) {
         var $ctrl = this;
 
         $ctrl.$onInit = function () {
-            WeatherService
+            DayDetailsService
                 .getOneUnit($ctrl.datetime)
                 .then(bindUnit)
         };
