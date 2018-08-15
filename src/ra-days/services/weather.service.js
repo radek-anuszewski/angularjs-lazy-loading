@@ -17,7 +17,7 @@
         }
     }
 
-    function WeatherService (ApiService, CONSTANTS) {
+    function Service (ApiService, CONSTANTS) {
         var cityId = CONSTANTS.cityId;
         var units = 'metric';
 
@@ -47,6 +47,6 @@
 
     angular
         .module('app')
-        .service('WeatherService', WeatherService);
+        .service('WeatherService', Service);
 
 }());
