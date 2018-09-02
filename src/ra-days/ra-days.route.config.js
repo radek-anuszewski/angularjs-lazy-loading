@@ -4,6 +4,11 @@
             name: 'days',
             component: 'raDaysContainer',
             url: '/days',
+            resolve: {
+                loadDependencies: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load('Days');
+                }],
+            }
         };
 
         var detailsState = {
